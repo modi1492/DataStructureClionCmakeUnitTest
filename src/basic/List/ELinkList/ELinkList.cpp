@@ -4,6 +4,7 @@
  * 包含算法: 2.20
  ========================*/
 
+#include <cstring>
 #include "ELinkList.h"  //**▲02 线性表**//
 
 
@@ -627,4 +628,46 @@ Status Remove(ELinkList* L, Link* q) {
     (*L).len--;
     
     return OK;
+}
+
+void CreateList_Tail(ELinkList* L, char* path) {
+    int i, n;
+    ElemType e;
+    FILE* fp;
+    int readFromConsole;    // 是否从控制台读取数据
+
+    // 如果没有文件路径信息，则从控制台读取输入
+    readFromConsole = path == NULL || strcmp(path, "") == 0;
+
+    if(readFromConsole) {
+        // 读取指定集合中元素的数量
+        printf("请输入元素数量：");
+        scanf("%d", &n);
+
+        InitList(L);
+
+        printf("请输入 %d 个元素：", n);
+        for(i = 1; i <= n; i++) {
+            scanf("%d", &e);
+            ListInsert(L, i, e);
+        }
+    } else {
+        fp = fopen(path, "r");
+        if(fp == NULL) {
+            printf("文件打开失败...\n");
+            exit(ERROR);
+        }
+
+        // 读取指定集合中元素的数量
+        ReadData(fp, "%d", &n);
+
+        InitList(L);
+
+        for(i = 1; i <= n; i++) {
+            ReadData(fp, "%d", &e);
+            ListInsert(L, i, e);
+        }
+
+        fclose(fp);
+    }
 }

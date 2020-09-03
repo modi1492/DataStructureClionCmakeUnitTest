@@ -4,7 +4,6 @@
  * 包含算法: 2.1
  ===============*/
 
-#include <basic/SqList/SqList.h>
 #include "SqListUtil.h"      //**▲02 线性表**//
 
 /*

@@ -16,8 +16,8 @@
 #define UNION_H
 
 #include <cstdio>
+#include <basic/List/SqList/SqList.h>
 #include "Status/Status.h"     //**▲01 绪论**//
-#include "basic/SqList/SqList.h"   //**▲02 线性表**//
 
 /*
  * ████████ 算法2.1 ████████

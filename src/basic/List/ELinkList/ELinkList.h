@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>     // 提供malloc、realloc、free、exit原型
 #include <limits.h>     // 提供一些极限常量
-#include "Status.h"     //**▲01 绪论**//
+#include <Status/Status.h>
 
 /*
  * ████ 注意 ████
@@ -249,5 +249,7 @@ Status Append(ELinkList* L, Link s);
  * 将链表的尾结点移除，并将被移除的结点引用存储在q中
  */
 Status Remove(ELinkList* L, Link* q);
+
+void CreateList_Tail(ELinkList* L, char* path);
 
 #endif

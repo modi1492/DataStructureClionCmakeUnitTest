@@ -8,7 +8,7 @@
 
 #include <cstdio>
 #include <cstdlib>      //提供malloc、realloc、free、exit原型
-#include "basic/LinkList/LinkList.h"    //**▲02 线性表**//
+#include <basic/List/LinkList/LinkList.h>
 
 /*
  * ████████ 算法2.12 ████████

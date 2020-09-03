@@ -8,8 +8,7 @@
 #define MERGEELIST_H
 
 #include <stdio.h>
-#include "Status.h"         //**▲01 绪论**//
-#include "ELinkList.h"      //**▲02 线性表**//
+#include <basic/List/ELinkList/ELinkList.h>
 
 /*
  * ████ 注意 ████

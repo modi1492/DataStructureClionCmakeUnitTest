@@ -6,7 +6,7 @@
 #define GTEST_DEMO_SLINKLISTUTIL_H
 
 
-#include <basic/SLinkList/SLinkList.h>
+#include <basic/List/SLinkList/SLinkList.h>
 
 /*
  * ████████ 算法2.17 ████████

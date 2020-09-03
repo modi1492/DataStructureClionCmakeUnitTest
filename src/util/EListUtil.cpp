@@ -1,10 +1,12 @@
+#include <Status/Status.h>
+#include <basic/List/ELinkList/ELinkList.h>
+
 /*===============
  * 归并非降序链表
  *
  * 包含算法: 2.21
  ================*/
 
-#include "MergeEList.h"
 
 Status MergeEList(ELinkList* La, ELinkList* Lb, ELinkList* Lc, int(Compare)(ElemType, ElemType)){
     Link ha, hb, pa, pb, q;
