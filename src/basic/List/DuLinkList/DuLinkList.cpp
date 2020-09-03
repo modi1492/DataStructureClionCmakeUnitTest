@@ -4,6 +4,7 @@
  * 包含算法: 2.18、2.19
  ======================*/
 
+#include <Status/Status.h>
 #include "DuLinkList.h"        //**▲02 线性表**//
 
 /*

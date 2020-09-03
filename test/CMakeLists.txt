@@ -1,5 +1,10 @@
 add_executable(
-    unit_tests SqTest.cpp LinkListTest.cpp SLinkListTest.cpp)
+    unit_tests
+        List/SqTest.cpp
+        List/LinkListTest.cpp
+        List/SLinkListTest.cpp
+        List/DuLinkListTest.cpp
+        List/ELinkListTest.cpp)
 
 target_link_libraries(
     unit_tests

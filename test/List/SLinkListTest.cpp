@@ -1,16 +1,12 @@
 #include "gtest/gtest.h"
-#include "basic/SLinkList/SLinkList.h"
 #include "Status/Status.h"
 #include "util/util.h"
 #include "util/SLinkListUtil.h"
+#include "basic/List/SLinkList/SLinkList.h"
 #include <iostream>
 using namespace std;
 
 
-// 判断data>e是否成立
-Status CmpGreater(ElemType data, ElemType e) {
-    return data > e ? TRUE : FALSE;
-}
 
 TEST(SLinkList, SLinkListT) {
     SLinkList space;    // 备用空间

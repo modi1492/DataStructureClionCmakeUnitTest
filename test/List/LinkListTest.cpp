@@ -1,22 +1,12 @@
 #include "gtest/gtest.h"
-#include "basic/LinkList/LinkList.h"
-#include "basic/SqList/SqList.h"
 #include "util/LinkListUtil.h"
+#include "basic/List/LinkList/LinkList.h"
 #include <iostream>
+
 using namespace std;
 
 
-
-TEST(SqList, InitLinkList) {
-    LinkList linkList;
-    SqList sqList;
-    Status i = InitList(&sqList);
-    cout << i << endl;
-    i = InitList(&linkList);
-    cout << i << endl;
-}
-
-TEST(SqList, MergeLinkList) {
+TEST(LinkList, MergeLinkList) {
     LinkList La, Lb, Lc;
 
     int n = 5;

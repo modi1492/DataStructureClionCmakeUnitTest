@@ -1,14 +1,8 @@
 #include "gtest/gtest.h"
-#include "basic/SqList/SqList.h"
 #include <iostream>
 #include <util/SqListUtil.h>
 
 using namespace std;
-
-// 测试函数，打印元素
-void PrintElem(ElemType e) {
-    printf("%d ", e);
-}
 
 TEST(SqList, InitSqList) {
     SqList sqList;
