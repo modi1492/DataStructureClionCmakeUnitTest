@@ -39,6 +39,26 @@ Status equal(ElemType e1, ElemType e2);
 
 Status equal(SqList s1, SqList s2);
 
+/*
+ * ████████ 算法2.2 ████████
+ *
+ * 非递减链表归并：C=A+B
+ *
+ * 归并顺序表La和Lb，生成新的顺序表Lc。
+ * 其中，La、Lb、Lc均为非递减序列。
+ */
+void MergeSqList_1(SqList La, SqList Lb, SqList* Lc);
+
+/*
+ * ████████ 算法2.7 ████████
+ *
+ * 非递减链表归并：C=A+B
+ *
+ * 归并顺序表La和Lb，生成新的顺序表Lc。
+ * 其中，La、Lb、Lc均为非递减序列。
+ */
+void MergeSqList_2(SqList La, SqList Lb, SqList* Lc);
+
 #endif
 
 

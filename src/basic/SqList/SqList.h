@@ -10,13 +10,13 @@
 #include <cstdio>
 #include <cstdlib>     // 提供malloc、realloc、free、exit原型
 #include "Status/Status.h"     //**▲01 绪论**//
+#include <util/util.h>
 
 /* 宏定义 */
 #define LIST_INIT_SIZE 100  // 顺序表存储空间的初始分配量
 #define LISTINCREMENT  10   // 顺序表存储空间的分配增量
 
 /* 顺序表元素类型定义 */
-typedef int ElemType;
 
 /*
  * 顺序表结构
