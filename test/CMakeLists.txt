@@ -4,7 +4,8 @@ add_executable(
         List/LinkListTest.cpp
         List/SLinkListTest.cpp
         List/DuLinkListTest.cpp
-        List/ELinkListTest.cpp)
+        List/ELinkListTest.cpp
+        Stack/SqStackTest.cpp)
 
 target_link_libraries(
     unit_tests

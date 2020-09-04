@@ -16,6 +16,7 @@ target_sources(
         basic/List/SLinkList/SLinkList.cpp
         basic/List/DuLinkList/DuLinkList.cpp
         basic/List/ELinkList/ELinkList.cpp
+        basic/Stack/SqStack/SqStack.cpp
 
         Status//Status.cpp
         util/SqListUtil.cpp
@@ -33,7 +34,8 @@ target_sources(
         ${CMAKE_CURRENT_LIST_DIR}/util/LinkListUtil.h
         ${CMAKE_CURRENT_LIST_DIR}/util/SqListUtil.h
         ${CMAKE_CURRENT_LIST_DIR}/util/util.h
-        ${CMAKE_CURRENT_LIST_DIR}/util/EListUtil.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/util/EListUtil.h
+        ${CMAKE_CURRENT_LIST_DIR}/basic/Stack/SqStack/SqStack.h
     )
 
 target_include_directories(
