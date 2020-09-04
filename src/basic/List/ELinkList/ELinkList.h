@@ -7,10 +7,11 @@
 #ifndef ELINKLIST_H
 #define ELINKLIST_H
 
-#include <stdio.h>
-#include <stdlib.h>     // 提供malloc、realloc、free、exit原型
-#include <limits.h>     // 提供一些极限常量
+#include <cstdio>
+#include <cstdlib>     // 提供malloc、realloc、free、exit原型
+#include <climits>     // 提供一些极限常量
 #include <Status/Status.h>
+#include <util/util.h>
 
 /*
  * ████ 注意 ████
@@ -20,8 +21,6 @@
  * 线性链表可以理解成对普通链表的一种扩展。
  */
 
-/* 线性链表元素类型定义 */
-typedef int ElemType;
 
 /*
  * 线性链表结构

@@ -7,15 +7,13 @@
 #ifndef SLINKLIST_H
 #define SLINKLIST_H
 
-#include <stdio.h>
-#include <stdlib.h>     //提供malloc、realloc、free、exit原型
+#include <cstdio>
+#include <cstdlib>     //提供malloc、realloc、free、exit原型
+#include <util/util.h>
 #include "Status/Status.h"     //**▲01 绪论**//
 
 /* 宏定义 */
 #define MAXSIZE 1000            // 备用空间最大容量，近似于静态链表的最大长度
-
-/* 静态链表元素类型定义 */
-typedef int ElemType;
 
 /*
  * 静态链表结构

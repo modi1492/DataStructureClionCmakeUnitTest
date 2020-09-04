@@ -7,7 +7,7 @@
 #ifndef MERGEELIST_H
 #define MERGEELIST_H
 
-#include <stdio.h>
+#include <cstdio>
 #include <basic/List/ELinkList/ELinkList.h>
 
 /*

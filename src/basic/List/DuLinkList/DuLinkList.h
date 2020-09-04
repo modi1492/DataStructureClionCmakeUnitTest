@@ -7,12 +7,11 @@
 #ifndef DULINKLIST_H
 #define DULINKLIST_H
 
-#include <stdio.h>
-#include <stdlib.h>     //提供malloc、realloc、free、exit原型
+#include <cstdio>
+#include <cstdlib>     //提供malloc、realloc、free、exit原型
+#include <util/util.h>
 #include "Status/Status.h"     //**▲01 绪论**//
 
-/* 双向循环链表元素类型定义 */
-typedef int ElemType;
 
 /*
  * 双向循环链表结构
