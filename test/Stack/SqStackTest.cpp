@@ -1,13 +1,13 @@
 #include "gtest/gtest.h"
 #include <iostream>
 #include "basic/Stack/SqStack/SqStack.h"
+#include "util/SqStackUtil.h"
 #include "Status/Status.h"
 #include "util/util.h"
 
 using namespace std;
 
-TEST(SqStack, SqStackT
-) {
+TEST(SqStack, SqStackT) {
     SqStack S;
     int i;
     SElemType e;
@@ -97,5 +97,15 @@ TEST(SqStack, SqStackT
         S.base != NULL && S.top != NULL ? printf(" S 存在！\n") : printf(" S 不存在！！\n");
     }
     PressEnterToContinue(debug);
+}
+
+
+TEST(SqStack, SqStackConversion) {
+    int i = 342391;
+
+    printf("将十进制数转换为八进制数...\n");
+
+    conversion(i);
+
 }
 

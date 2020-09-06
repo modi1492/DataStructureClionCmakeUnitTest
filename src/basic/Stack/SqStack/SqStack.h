@@ -7,14 +7,14 @@
 
 #include <cstdio>
 #include <cstdlib>     // 提供malloc、realloc、free、exit原型
+#include <util/util.h>
 #include "Status/Status.h"     //**▲01 绪论**//
 
 /* 宏定义 */
 #define STACK_INIT_SIZE 100     // 顺序栈存储空间的初始分配量
 #define STACKINCREMENT  10      // 顺序栈存储空间的分配增量
 
-/* 顺序栈元素类型定义 */
-typedef int SElemType;
+
 
 // 顺序栈元素结构
 typedef struct {

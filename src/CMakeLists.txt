@@ -22,6 +22,7 @@ target_sources(
         util/SqListUtil.cpp
         util/LinkListUtil.cpp
         util/EListUtil.cpp
+        util/SqStackUtil.cpp
         util/util.cpp
     PUBLIC
         ${CMAKE_CURRENT_LIST_DIR}/basic/List/SqList/SqList.h
@@ -36,6 +37,7 @@ target_sources(
         ${CMAKE_CURRENT_LIST_DIR}/util/util.h
         ${CMAKE_CURRENT_LIST_DIR}/util/EListUtil.h
         ${CMAKE_CURRENT_LIST_DIR}/basic/Stack/SqStack/SqStack.h
+        ${CMAKE_CURRENT_LIST_DIR}/util/SqStackUtil.h
     )
 
 target_include_directories(
