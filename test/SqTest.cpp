@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "basic/SqList/SqList.h"
+#include "SqList/SqList.h"
 #include <iostream>
 #include <util/SqListUtil.h>
 
