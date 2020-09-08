@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include <typeinfo.h>
+#include <typeinfo>
 
 /******************************************************************************************
  * 列表、向量等结构内的节点中，可以存放基本类型或构造类型
@@ -17,8 +17,9 @@
  * 此处，借助C++中偏特化技术区分上述两种情况，并做对应处理
  ******************************************************************************************/
 
-template <typename T> struct Cleaner {
-    static void clean ( T x ) { //相当于递归基
+template<typename T>
+struct Cleaner {
+    static void clean(T x) { //相当于递归基
 #ifdef _DEBUG
         static int n = 0;
       if ( 7 > strlen ( typeid ( T ).name() ) ) { //复杂类型一概忽略，只输出基本类型
@@ -30,9 +31,10 @@ template <typename T> struct Cleaner {
     }
 };
 
-template <typename T> struct Cleaner<T*> {
-    static void clean ( T* x ) {
-        if ( x ) { delete x; } //如果其中包含指针，递归释放
+template<typename T>
+struct Cleaner<T *> {
+    static void clean(T *x) {
+        if (x) { delete x; } //如果其中包含指针，递归释放
 #ifdef _DEBUG
         static int n = 0;
       printf ( "\t<%s>[%d] released\n", typeid ( T* ).name(), ++n );
@@ -40,4 +42,5 @@ template <typename T> struct Cleaner<T*> {
     }
 };
 
-template <typename T> void release ( T x ) { Cleaner<T>::clean ( x ); }
+template<typename T>
+void release(T x) { Cleaner<T>::clean(x); }

@@ -17,7 +17,7 @@
 
 #include <cstdio>
 #include "Status/Status.h"     //**▲01 绪论**//
-#include "basic/SqList/SqList.h"   //**▲02 线性表**//
+#include "SqList/SqList.h"   //**▲02 线性表**//
 
 /*
  * ████████ 算法2.1 ████████
@@ -27,7 +27,7 @@
  * 计算La与Lb的并集并返回。
  * 由于生成的并集会拼接在La上，所以La的入参为指针类型。
  */
-void Union(SqList* La, SqList Lb);
+void Union(SqList *La, SqList Lb);
 
 /*
  * 判等
@@ -40,7 +40,6 @@ Status equal(ElemType e1, ElemType e2);
 Status equal(SqList s1, SqList s2);
 
 #endif
-
 
 
 #endif //GTEST_DEMO_SQLISTUTIL_H

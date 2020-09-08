@@ -10,6 +10,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <iostream>
+
 using namespace std;
 
 /******************************************************************************************
@@ -28,7 +29,7 @@ using namespace std;
 
 #include "double_Elem.h"
 #include "increase_Elem.h"
-#include "basic/_share/Hailstone_Elem.h"
+#include "Hailstone_Elem.h"
 #include "increase_list.h"
 #include "increase_vector.h"
 

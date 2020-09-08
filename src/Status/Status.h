@@ -48,7 +48,7 @@ extern Boolean debug;   // 是否使用debug模式
  * 1. 这里约定所有格式串为简单形式，如：%d%c%s等，而不是%2d%5s等
  * 2. 读取字符串时，遇到空格或非打印字符会停止读取
  */
-int ReadData(FILE* fp, char* format, ...);
+int ReadData(FILE *fp, char *format, ...);
 
 /*
  * 摁下回车键以继续运行。
@@ -72,6 +72,6 @@ void Wait(long time);
  * 此方法常用在读取字符的语句之前，这会跳过遇到目标字符之前的空白符号，
  * 比如跳过'\r'、'\n'、'\r\n'、' '、'\t'、'\f'。
  */
-void skipBlank(FILE* fp);
+void skipBlank(FILE *fp);
 
 #endif

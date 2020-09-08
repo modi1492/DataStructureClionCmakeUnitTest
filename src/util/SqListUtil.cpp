@@ -4,7 +4,7 @@
  * 包含算法: 2.1
  ===============*/
 
-#include <basic/SqList/SqList.h>
+#include <SqList/SqList.h>
 #include "SqListUtil.h"      //**▲02 线性表**//
 
 /*
@@ -15,7 +15,7 @@
  * 计算La与Lb的并集并返回。
  * 由于生成的并集会拼接在La上，所以La的入参为指针类型。
  */
-void Union(SqList* La, SqList Lb) {
+void Union(SqList *La, SqList Lb) {
     int La_len, Lb_len;
     int i;
     ElemType e;
@@ -24,12 +24,12 @@ void Union(SqList* La, SqList Lb) {
     La_len = ListLength(*La);
     Lb_len = ListLength(Lb);
 
-    for(i = 1; i <= Lb_len; i++) {
+    for (i = 1; i <= Lb_len; i++) {
         // 取Lb中第i个元素赋给e
         GetElem(Lb, i, &e);
 
         // 若e不在La中则插入
-        if(!LocateElem(*La, e, equal)) {
+        if (!LocateElem(*La, e, equal)) {
             ListInsert(La, ++La_len, e);
         }
     }
@@ -45,7 +45,7 @@ Status equal(ElemType e1, ElemType e2) {
     return e1 == e2 ? TRUE : FALSE;
 }
 
-Status equal(SqList s1, SqList s2){
+Status equal(SqList s1, SqList s2) {
     return TRUE;
 }
 

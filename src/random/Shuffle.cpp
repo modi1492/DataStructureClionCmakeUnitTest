@@ -9,10 +9,10 @@
 /*DSA*/#include <iostream>
 /*DSA*/using namespace std;
 
-void shuffle ( int A[], int n ) { //½«A[0, n)Ëæ»ú´òÂÒ
-    while ( 1 < n )
-        swap ( A[rand() % n], A[--n] );
+void shuffle(int A[], int n) { //½«A[0, n)Ëæ»ú´òÂÒ
+    while (1 < n)
+        swap(A[rand() % n], A[--n]);
 }
 
-void shuffle ( int A[], int lo, int hi ) //½«A[lo, hi)Ëæ»ú´òÂÒ
-{  shuffle ( A + lo, hi - lo );  }
+void shuffle(int A[], int lo, int hi) //½«A[lo, hi)Ëæ»ú´òÂÒ
+{ shuffle(A + lo, hi - lo); }
