@@ -18,3 +18,15 @@ TEST(Student, StudentT) {
 
 }
 
+TEST(Student, StudentSize) {
+    //在栈上创建对象
+    cout << sizeof(char *) << " "<< sizeof(int) << " "<< sizeof(float) << endl;
+    Student stu;
+    cout<<sizeof(stu)<<endl;
+    //在堆上创建对象
+    Student *pstu = new Student();
+    cout<<sizeof(*pstu)<<endl;
+    //类的大小
+    cout<<sizeof(Student)<<endl;
+}
+
