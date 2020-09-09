@@ -8,6 +8,11 @@ private:  //私有的
     int m_age;
     float m_score;
 public:  //共有的
+    //声明构造函数
+    Student(char *name, int age, float score);
+
+    Student();
+
     void setname(char *name);
 
     void setage(int age);

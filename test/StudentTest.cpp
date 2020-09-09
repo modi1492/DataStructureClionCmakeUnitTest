@@ -30,3 +30,18 @@ TEST(Student, StudentSize) {
     cout<<sizeof(Student)<<endl;
 }
 
+TEST(Student, StudentConstruct) {
+    //调用构造函数 Student(char *, int, float)
+    Student stu("小明", 15, 92.5f);
+    stu.show();
+    //调用构造函数 Student()
+    Student *pstu = new Student();
+    pstu -> show();
+    pstu -> setname("李华");
+    pstu -> setage(16);
+    pstu -> setscore(96);
+    pstu -> show();
+}
+
+
+
