@@ -43,5 +43,13 @@ TEST(Student, StudentConstruct) {
     pstu -> show();
 }
 
+TEST(Student, StudentConstructInitList) {
+    Student stu("小明", 15, 92.5f);
+    stu.show();
+    Student *pstu = new Student("李华", 16, 96);
+    pstu -> show();
+
+}
+
 
 

@@ -7,11 +7,13 @@ target_sources(
         Status/Status.cpp
         util/SqListUtil.cpp
         cpplearning/Student.cpp
+        cpplearning/VLA.cpp
     PUBLIC
         ${CMAKE_CURRENT_LIST_DIR}/basic/SqList/SqList.h
         ${CMAKE_CURRENT_LIST_DIR}/Status/Status.h
         ${CMAKE_CURRENT_LIST_DIR}/util/SqListUtil.h
         ${CMAKE_CURRENT_LIST_DIR}/cpplearning/Student.h
+        ${CMAKE_CURRENT_LIST_DIR}/cpplearning/VLA.h
     )
 
 target_include_directories(

@@ -1,10 +1,8 @@
 #include "Student.h"
 
 //定义构造函数
-Student::Student(char *name, int age, float score){
-    m_name = name;
-    m_age = age;
-    m_score = score;
+Student::Student(char *name, int age, float score): m_name(name), m_age(age), m_score(score){
+    //TODO
 }
 
 Student::Student(){
