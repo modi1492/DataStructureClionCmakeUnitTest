@@ -1,9 +1,18 @@
 #include <iostream>
+
 using namespace std;
-class Student{
-public:
-    char *name;
-    int age;
-    float score;
-    void say();
+
+class Student {
+private:  //私有的
+    char *m_name;
+    int m_age;
+    float m_score;
+public:  //共有的
+    void setname(char *name);
+
+    void setage(int age);
+
+    void setscore(float score);
+
+    void show();
 };
