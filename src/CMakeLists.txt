@@ -1,4 +1,8 @@
-add_library(example "" util/SqListUtil.cpp util/SqListUtil.h)
+add_library(example ""
+        util/SqListUtil.cpp
+        util/SqListUtil.h
+        cpplearning/Student.cpp
+        cpplearning/VLA.cpp)
 
 target_sources(
     example
@@ -14,6 +18,7 @@ target_sources(
         ${CMAKE_CURRENT_LIST_DIR}/util/SqListUtil.h
         ${CMAKE_CURRENT_LIST_DIR}/cpplearning/Student.h
         ${CMAKE_CURRENT_LIST_DIR}/cpplearning/VLA.h
+        ${CMAKE_CURRENT_LIST_DIR}/cpplearning/CSample.h
     )
 
 target_include_directories(
