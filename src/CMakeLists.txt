@@ -19,6 +19,7 @@ target_sources(
         ${CMAKE_CURRENT_LIST_DIR}/cpplearning/Student.h
         ${CMAKE_CURRENT_LIST_DIR}/cpplearning/VLA.h
         ${CMAKE_CURRENT_LIST_DIR}/cpplearning/CSample.h
+        ${CMAKE_CURRENT_LIST_DIR}/cpplearning/People.h
     )
 
 target_include_directories(
