@@ -1,5 +1,8 @@
 add_executable(
-    unit_tests SqTest.cpp)
+    unit_tests
+        SqTest.cpp
+    FuncTest.cpp
+csapp/ch02/CTest.cpp)
 
 target_link_libraries(
     unit_tests
