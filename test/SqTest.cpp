@@ -3,6 +3,7 @@
 #include <iostream>
 #include <util/SqListUtil.h>
 
+
 using namespace std;
 
 // 测试函数，打印元素
@@ -49,4 +50,32 @@ TEST(SqList, Union) {
     ListTraverse(La, PrintElem);
     EXPECT_EQ(TRUE, equal(La, Lb));
 
+}
+
+
+
+char *str1 = "c.biancheng.net";  //字符串在常量区，str1在全局数据区
+int n;  //全局数据区
+
+char *func() {
+    char *str = "C语言中文网";  //字符串在常量区，str在栈区
+    return str;
+}
+
+TEST(SqList, LinuxMemory) {
+    int a;  //栈区
+    char *str2 = "01234";  //字符串在常量区，str2在栈区
+    char arr[20] = "56789";  //字符串和arr都在栈区
+    char *pstr = func();  //栈区
+    int b;  //栈区
+
+    printf("str1: %#X\npstr: %#X\nstr2: %#X\n", str1, pstr, str2);
+    puts("--------------");
+    printf("&str1: %#X\n   &n: %#X\n", &str1, &n);
+    puts("--------------");
+    printf("  &a: %#X\n arr: %#X\n  &b: %#X\n", &a, arr, &b);
+    puts("--------------");
+    printf("n: %d\na :%d\nb: %d\n", n, a, b);
+    puts("--------------");
+    printf("%s\n", pstr);
 }

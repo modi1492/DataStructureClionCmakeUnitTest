@@ -2,6 +2,7 @@ add_executable(
     unit_tests
         SqTest.cpp
     FuncTest.cpp
+        c_chinese/preprocess.cpp
 csapp/ch02/CTest.cpp)
 
 target_link_libraries(
